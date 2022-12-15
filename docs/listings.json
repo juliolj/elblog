@@ -3,9 +3,7 @@
     "listing": "/index.html",
     "items": [
       "/posts/notas_centrate/index.html",
-      "/posts/post-with-code/index.html",
-      "/posts/post1/index.html",
-      "/posts/welcome/index.html"
+      "/posts/post1/index.html"
     ]
   }
 ]
