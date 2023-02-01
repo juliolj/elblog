@@ -8,7 +8,7 @@ image: "typewriter.jpg"
 
 Reflexiones sobre el proceso personal que me llevó a comenzar este blog. También hablo un poco sobre los primeros pasos prácticos que tomé para concretar esta primera versión. Si estás tratando de decidir si es buena idea comenzar un blog y cómo podrías empezarlo sin invertir demasiado, este artículo te puede ser de ayuda.
 
-## ¡Empecemos un blog! ok, ¿por dónde empezar?
+## ¡Hagamos un blog! ok, ¿por dónde empezar?
 
 Ha pasado ya un largo tiempo desde que empecé a considerar la idea de iniciar un blog. Cada vez que pensaba sobre ello, me surgían muchas preguntas, por ejemplo:
 

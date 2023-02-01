@@ -1,0 +1,31 @@
+{
+    "id": "583F71FB",
+    "path": "~/Julio/elblog/posts/make_time_notas/index.qmd",
+    "project_path": "posts/make_time_notas/index.qmd",
+    "type": "quarto_markdown",
+    "hash": "1385793142",
+    "contents": "",
+    "dirty": false,
+    "created": 1675221049713.0,
+    "source_on_save": false,
+    "relative_order": 6,
+    "properties": {
+        "rmdVisualMode": "true",
+        "rmdVisualWrapConfigured": "true",
+        "source_window_id": "",
+        "Source": "Source",
+        "rmdVisualCollapsedChunks": "",
+        "docOutlineVisible": "1",
+        "cursorPosition": "0,0",
+        "scrollLine": "0",
+        "rmdVisualModeLocation": "52:0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1675229332,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1675229332967,
+    "read_only": false,
+    "read_only_alternatives": []
+}

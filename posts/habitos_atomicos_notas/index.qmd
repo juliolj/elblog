@@ -32,7 +32,7 @@ Debido a que los efectos de un hábito no son percibidos de forma inmediata, a m
 
 Los hábitos que formamos representan direcciones hacia las cuales empujamos nuestra vida: un pequeño cambio de hábito puede conducirnos a un destino completamente distinto.
 
-Tus resultados desvelan tus hábitos: la cantidad de dinero que tienes es un indicador de tus hábitos financieros, tu peso actual es un indicador de tus hábitos alimenticios, tu conocimiento es una indicador de tus hábitos de estudio, el aspecto de tu casa es un indicador de tus hábitos de orden y limpieza. **Al final obtienes lo que repites**
+Tus resultados desvelan tus hábitos: la cantidad de dinero que tienes es un indicador de tus hábitos financieros, tu peso actual es un indicador de tus hábitos alimenticios, tu conocimiento es una indicador de tus hábitos de estudio, el aspecto de tu casa es un indicador de tus hábitos de orden y limpieza. **Al final obtienes lo que repites.**
 
 Las pequeñas batallas que ganamos cada día definen nuestras futuras recompensas.
 
@@ -78,7 +78,7 @@ Los hábitos y la identidad se moldean mutuamente, creando una espiral de cambio
 
 Es mejor enfocarse en convertirse en el tipo de persona que alcanza cierto tipo de resultados y no en los resultados en sí.
 
-Las conductas acomplañadas de consecuencias satisfactorias tienden a repetirse, las conductas que producen consecuencias desagradables tienden a no repetirse.
+Las conductas acompañadas de consecuencias satisfactorias tienden a repetirse, las conductas que producen consecuencias desagradables tienden a no repetirse.
 
 Los hábitos son una serie de soluciones automáticas que resuelven problemas y presiones que se enfrentan regularmente. Son atajos mentales que reducen el uso de energía en el cerebro.
 
@@ -88,21 +88,21 @@ Simplificar y automatizar las tareas fundamentales brinda el espacio mental nece
 
 La señal es una pequeña porción de información que anticipa la recompensa.
 
-El anhelo es la motivación que nos impulsa a buscar un hábito es el deseo de producir un cambio de estado a través de cierta acción.
+El anhelo es la motivación que nos impulsa a buscar un hábito, es el deseo de producir un cambio de estado a través de cierta acción.
 
 La respuesta es el pensamiento o la acción realizada.
 
 La recompensa es el beneficio percibido por realizar la acción.
 
-Las recompensas cierran el circuito de retroalimentación y completa el ciclo de los hábitos
+Las recompensas cierran el circuito de retroalimentación y completa el ciclo de los hábitos.
 
-El ciclo de los hábitos está constituido por dos fases: la fase del problema y la fase de la solución
+El ciclo de los hábitos está constituido por dos fases: la fase del problema y la fase de la solución.
 
 La señal y el anhelo pertenecen a la fase de problema, mientras que la respuesta y la recompensa forman la fase de la solución.
 
 La fase del problema ocurre cuando nos damos cuenta de que es necesario cambiar algo.
 
-Las fases de la solución tiene lugar cuando te decides a tomar acción y lograr el cambio que deseas.
+La fase de la solución tiene lugar cuando te decides a tomar acción y lograr el cambio que deseas.
 
 Las cuatro leyes del cambio de conducta un marco de referencia para diseñar hábitos correctos y eliminar los perjudiciales.
 
@@ -184,7 +184,7 @@ El atractivo de una actividad aumenta si se puede realizar al mismo tiempo que t
 
 Es posible combinar la acumulación de hábitos con la acumulación de tentaciones:
 
-1.   después de \[hábito actual\], haré \[hábito que necesito\]
+1.   después de \[hábito actual\], haré \[hábito que necesito\].
 2.   después de \[hábito que necesito\], haré \[hábito que quiero\].
 
 **Tendemos a imitar hábitos de la gente que nos rodea.**
