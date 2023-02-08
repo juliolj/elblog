@@ -1,14 +1,14 @@
 {
-    "id": "342B722F",
-    "path": "~/Julio/elblog/posts/notas_centrate/index.qmd",
-    "project_path": "posts/notas_centrate/index.qmd",
+    "id": "9DF437A7",
+    "path": "~/Julio/elblog/about.qmd",
+    "project_path": "about.qmd",
     "type": "quarto_markdown",
-    "hash": "0",
+    "hash": "2273537849",
     "contents": "",
     "dirty": false,
-    "created": 1671071681868.0,
+    "created": 1671077778795.0,
     "source_on_save": false,
-    "relative_order": 4,
+    "relative_order": 5,
     "properties": {
         "rmdVisualMode": "true",
         "rmdVisualWrapConfigured": "true",
@@ -16,16 +16,16 @@
         "Source": "Source",
         "docOutlineVisible": "1",
         "rmdVisualCollapsedChunks": "",
-        "rmdVisualModeLocation": "358:100",
-        "cursorPosition": "90,0",
-        "scrollLine": "0"
+        "cursorPosition": "17,139",
+        "scrollLine": "0",
+        "rmdVisualModeLocation": "2:0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1675229093,
+    "lastKnownWriteTime": 1671080319,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1675229093540,
+    "last_content_update": 1671080319089,
     "read_only": false,
     "read_only_alternatives": []
 }
