@@ -3,7 +3,7 @@
     "path": "~/NewDell/DocuLinux/Transversal/Writing/writings.Rmd",
     "project_path": null,
     "type": "r_markdown",
-    "hash": "0",
+    "hash": "2991891617",
     "contents": "",
     "dirty": false,
     "created": 1683520869427.0,
@@ -12,20 +12,20 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "781,0",
+        "cursorPosition": "791,0",
         "scrollLine": "0",
         "rmdVisualMode": "true",
         "rmdVisualWrapConfigured": "true",
         "docOutlineVisible": "1",
         "rmdVisualCollapsedChunks": "",
-        "rmdVisualModeLocation": "31:0"
+        "rmdVisualModeLocation": "55716:23187"
     },
     "folds": "",
-    "lastKnownWriteTime": 1695697551,
+    "lastKnownWriteTime": 1695756817,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1695697551935,
+    "last_content_update": 1695756818040,
     "read_only": false,
     "read_only_alternatives": []
 }
