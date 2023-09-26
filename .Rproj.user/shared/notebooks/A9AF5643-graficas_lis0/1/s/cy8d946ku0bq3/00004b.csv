@@ -1,0 +1,1 @@
+"0","ggplot(df, aes(Año,value)) + geom_line(aes(color = `Medios de control`)) +  geom_point(aes(shape = `Medios de control`, color = `Medios de control`)) + labs(y = ""Cantidad"") + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) + scale_x_continuous(breaks=c(2020,2021,2022))"

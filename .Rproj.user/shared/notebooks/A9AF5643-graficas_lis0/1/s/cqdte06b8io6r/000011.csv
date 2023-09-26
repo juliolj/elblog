@@ -1,0 +1,1 @@
+"0","ggplot(df, aes(Año,value)) + geom_line(aes(color = `Medios de control`)) +  geom_point(aes(shape = `Medios de control`, color = `Medios de control`)) + labs(y = ""Cantidad"")"
