@@ -34,5 +34,17 @@
   },
   "posts/Experiencias_Cumbre_Maslow/index.qmd": {
     "index.html": "6715bc2e"
+  },
+  "posts/post2/index.qmd": {
+    "index.html": "bbafd9f5"
+  },
+  "posts/post3/index.qmd": {
+    "index.html": "e38edb78"
+  },
+  "posts/mandelbrot_python/index.qmd": {
+    "index.html": "55f984e5"
+  },
+  "evolucion_personal.Rmd": {
+    "evolucion_personal.html": "a1b2b7c3"
   }
 }

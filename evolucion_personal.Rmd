@@ -1,0 +1,90 @@
+---
+title: "Juego Infinito y Evolución personal"
+author: "Julio Cesar Lopez Juarez"
+date: "2024-03-21"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# El Juego Infinito de la Evolución Personal
+
+Desde hace algunos años se han venido utilizando los términos crecimiento personal y desarrollo personal para aludir a todo tipo de iniciativas, enfoques, estrategias, métodos, etc. que generalmente buscan mejorar en algún sentido la gestión del *cambio personal*. Crecimiento y desarrollo son aspectos y etapas (subprocesos) que forman parte de un proceso más amplio, llamado evolución. Esta observación invita naturalmente a considerar la noción de **evolución personal** y sus implicaciones cualitativas sobre nuestras experiencias y sobre el grado de satisfacción que percibimos a través de ellas.
+
+## El concepto de evolución evoluciona.
+
+Etimologicamente: "Accion y efecto de dar vueltas hacia afuera"
+
+El concepto de evolución tiene su propia historia de cambios, en la que no entraremos en detalle. Es común que al pensar en la noción de evolución, lo primero que venga a la mente sea la evolución de entidades biológicas; los caminos evolutivos de los organismos vivos nos fascinan y son espectaculares en su derroche de complejidad. Pero los fenómenos evolutivos no se agotan en los sistemas biológicos. De forma *natural,* podemos también pensar en evolución estelar, evolución económica, evolución social, evolución tecnológica y por qué no, en evolución personal.
+
+¿Qué es evolución?
+
+Para que el término evolución tenga su gracia por cuenta propia, es necesario diferenciarlo de la noción de cambio. Es cierto, el cambio es parte esencial de un proceso evolutivo, pero **reservamos la palabra evolución para ciertos tipos de cambios: aquellos en los que la *entropía* puede ser modulada y acotada mediante un intercambio energético con el entorno.** Aclaramos que no se prentende que esta sea la noción universalmente aceptada de evolución; es la noción que usaremos aquí como un punto de partida.
+
+Hemos usado la entropía, una magnitud física un tanto peculiar, para definir el término evolución, que igualmente tiene sus peculiaridades: en un proceso evolutivo pueden ocurrir eventos de replicación, diferenciación, desarrollo, crecimiento, sincronización, cooperación, competencia, cambios morfológicos, ... y en cada uno de estos eventos la entropía juega un papel clave. La modulación de la entropía da lugar a propiedades *emergentes*.
+
+No entraremos aquí en definir precisa y rigurosamente lo que es la entropía; sólo mencionaremos los aspectos que logran transmitir mejor la esencia de la misma.
+
+La entropía, desde el marco de la termodinámica, es una magnitud física cuyo comportamiento es peculiar en cierto sentido, ya que a diferencia de otras magnitudes, ésta aumenta en un sistema cerrado. Dicho comportamiento es consecuencia de la también peculiar *segunda ley de la termodinámica*. Parece algo misterioso, no? ¿cómo puede una cantidad física aumentar en un sistema en el que no entra ni sale nada? Y aún hay otro aspecto sorprendente de la entropía: es posible formular un concepto de entropía desde la teoría de información. En este último enfoque, la entropía mide la incertidumbre de una fuente de información. Ambas nociones de emtropía, la termodinámica y la informática están estrechamente relacionadas: la entropía es un puente que trasforma bits en Joules/Kelvi formulación pesar de estar definida en términos de magnitudes físicas como calor transferido y temperatura absoluta, es posible establecer una *mágica* conexión entre la entropía y el *nivel de orden* del sistema:a mayor entropía, el sistema se encuentra *más desordenado*. Este puente entre magnitudes físicas y nivel de orden de un sistema se sostiene gracias a que se puede formular una noción de entropía desdEn particular, los sistemas abiertos de menor entropía son más predecibles que los de alta entropía; tenemos una mayor certeza de su comportamiento.
+
+Somo entidades evolutivas en tanto que se nos puede caracterizar como entidades formadas por estructuras y patrones locales alejados del punto de equilibrio, que surgen de un proceso dinámico de formación de patrones espacio-temporales, energéticos e informáticos.
+
+somos entidades cuyas estructuras y patrones espacio-temporales, energéticos e informáticos se caracterizan por estar fuera de equilibrio, permitiendo eventos neguentrópicos que dan lugar a propiedades emergentes. Somos una instancia de la capacidad creativa del universo.
+
+En resumen: un sistema evolutivo usa energía Así, entropía, energía e información son cantidades estrechamente inter-relacionadas. Todo lo anterior ciertamente es sorprendente, pero es inteligible a través de la formulación atómica de la termodinámica y de la teoría de la probabilidad [ref Arieh Ben-Naim].
+
+En cierto sentido, la entropía es un *motor negativo* para la evolución: en un proceso evolutivo, el sistema disminuye o al menos mantiene a raya a la entropía, ganando así certeza en las consecuencias que tienen sus interacciones con el entorno.
+
+Falta un detalle: ¿cómo logra un sistema modular la entropía de su entorno local en primer lugar? A través de un suministro *externo* de energía.
+
+El universo admite intercambios energéticos que permiten reducir localmente el nivel de entropía. ¿Por qué? no lo sé, pero gracias a eso estamos aquí, y al parecer es lo que orienta nuestra exploración en el infinito espacio de posibilidades.
+
+Reconsideremos ahora el término *evolución personal*: por un lado la evolución la entedemos a través de la entropía, una magnitud y a lo *personal* se accesa mejor desde la Psicología. La experiencia personal no es un fenómeno puramente subjetivo, pero sí incluye un componente subjetivo esencial. Entonces, ¿nos animamos a concebir una *entropía psicológica*? es decir ¿cómo se ve impactada la parte subjetiva de las experiencia debido a los cambios en el nivel de certeza que se tiene del entorno?
+
+La evolución personal hace referencia a los procesos que nos permiten mantener un nivel de entropía tal que que optimiza nuestra demanda energética.
+
+¿Y por qué queremos optimizar nuestros niveles energéticos? por que es la manera de aumentar nuestras chances de *continuar en el* juego.
+
+a la atención necesaria
+
+Introduciendo el concepto de entropia negativa y basado sobre los principios termondinámicos,
+
+Físicamente la entropía puede considerarse la otra cara de la energía
+
+Ratio Señal/Ruido
+
+Conjuntamtente, a nivel físico se nos puede caracterizar como estructuras y patrones locales que surgen de un proceso dinámico de formación de patrones espacio-temporales, energéticos e informáticos.
+
+Así que, por unamisteriosa razón, el universo permite *islas locales* de reducción de entropía.
+
+## ¿Cuál es el juego infinito?
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+Ansiedad, incertidumbre, flujo, el tao, equilibrio, evolución
+
+La danza de Shiva, el tao y el azar en sus roles como destructor y creador
+
+Evolución es la transición de una adaptación a otra.
+
+Complejidad, grados de libertad y distancia al equilibrio
+
+A ver del corazón qué sale:
+
+La evolución personal es la exploración que hacemos para optimizar nuestra energía en sus diferentes manifestaciones (7 energías)
+
+Ser impecables con nuestro uso energético: intención
+
+En la vecindad de un putno de bifurcación (transición de fase) las Fluctuaciones aleatorias (azar) pueden llevar a un sistema a un nuevo régimen
+
+PRESENTACION:
+
+¿Qué es Evolución Personal? La reflexión sobre esta cuestión me ha llevado por un sorpresivo camino donde han asomado la entropía, la consciencia, el ego, el taoismo y nuestra relación con lo sagrado. El resultado (siempre provisional) de estas reflexiones está tomando forma de un pequeño artículo, próximamente disponible. Y para tí, ¿Qué es la Evolución Personal? Los leo y aprendo :-)
+
+la consideración de esta pregunta ha dado lugar a un viaje reflexivo donde energía, entropía y consciencia danzan entre sí atravesando lo físico, lo psicológico y lo espiritual. Más que una respuesta definitva, el ejercicio busca permanecer abierto y procurar un marco que brinde perspectivas integrales
+
+alrededor de esta pregunta construyó un camino
+
+Evolución, energía y espiritualidad.
