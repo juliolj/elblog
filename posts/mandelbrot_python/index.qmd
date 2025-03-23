@@ -19,7 +19,7 @@ Más tarde en las décadas de los 60 y 70 del siglo pasado, matemáticos como Be
 
 Costas, ríos, nubes, montañas, vasos sanguíneos, árboles y manchas de pintura en una pared; son todos ellos ejemplos de objetos que poseen características propias de los fractales. Intuitivamente, esto quiere decir que las formas que hacen reconocibles a estos objetos no varían considerablemente al cambiar la escala: un árbol se sigue viendo como árbol ya sea que lo veamos de lejos o de cerca (por supuesto, dentro de ciertos límites); lo mismo ocurre con una montaña o una mancha en la pared. Cuando una estructura tiene la propiedad de repetirse a diferentes escalas se dice que es *autosimilar.*
 
-Seguramente se habrá notado que hasta ahora hemos esquivado, no sin cierta dosis de torpeza, la cuestión de dar una descripción precisa de lo que es un fractal. Ante esto damos dos justificaciones: primero, no es el propósito de este artículo dar una descripción teórica exhaustiva de los fractales, suponiendo que fuera posible realizar tal cosa en un sólo *post*. Segundo, aquí adoptamos la proverbial actitud de que "una imagen vale más que mil palabras", la cual resulta particularmente acertada y de utilidad cuando queremos acercarnos a la geometría fractal.
+Seguramente se habrá notado que hasta ahora hemos esquivado la cuestión de dar una descripción precisa de lo que es un fractal. Ante esto damos dos justificaciones: primero, no es el propósito de este artículo dar una descripción teórica exhaustiva de los fractales, suponiendo que fuera posible realizar tal cosa en un sólo *post*. Segundo, aquí adoptamos la proverbial actitud de que "una imagen vale más que mil palabras", la cual resulta particularmente acertada y de utilidad cuando queremos acercarnos a la geometría fractal.
 
 Finalmente, sabemos que habrá más de un lector que no termine de sentirse cómodo leyendo un artículo sobre fractales en el cual el autor no se toma la molestia de, por lo menos, mencionar la definición de lo que se entiende por fractal. Para dicho grupo de lectores, a continuación enunciamos la definición que el propio Mandelbrot propone:
 
@@ -33,9 +33,9 @@ Cumplido este trámite, nos apresuramos a decir que esta esotérica definición 
 
 # Conjunto de Mandelbrot
 
-El conjunto de Mandelbrot es probablemente uno de los fractales más populares y estudiados.
+El conjunto de Mandelbrot, al cual en adelante denotamos por $M$, es probablemente uno de los fractales más populares y estudiados.
 
-El conjunto de Mandelbrot, al cual en adelante denotamos por $M$, es un subconjunto del plano complejo $\mathbb{C}$. Su definición se da a partir de un proceso recursivo: se define una familia de sucesiones complejas parametrizadas por un número $c \in \mathbb{C}$ de la siguiente forma:
+El conjunto $M$ es un subconjunto del plano complejo $\mathbb{C}$. Su definición se da a partir de un proceso recursivo: se define una familia de sucesiones complejas parametrizadas por un número $c \in \mathbb{C}$ de la siguiente forma:
 
 $$
 \begin{align*} 
@@ -44,19 +44,19 @@ z_{n+1}(c) &= z_n^2+c
 \end{align*}
 $$ {#eq-1}
 
-El conjunto $M$ está formado por aquéllos valores de $c$ para los cuales la sucesión $\{z_i(c)\}_{i=0}^\infty$ está acotada. Por ejemplo, $c=1$ da lugar a la sucesión no acotada $\{0, 1, 2, 5 ,26, … \}$, por lo cual 1 no pertenece a $M$. En cambio, $c=-1$ sí pertenece a $M$, ya que produce la sucesión acotada $\{0, -1, 0 -1, … \}$.
+Los elementos de $M$ son aquéllos valores de $c$ para los cuales la sucesión $\{z_i(c)\}_{i=0}^\infty$ está acotada. Por ejemplo, $c=1$ da lugar a la sucesión no acotada $\{0, 1, 2, 5 ,26, … \}$, por lo cual 1 no pertenece a $M$. En cambio, $c=-1$ sí pertenece a $M$, ya que produce la sucesión acotada $\{0, -1, 0 -1, … \}$.
 
-Se puede demostrar que $M$ está contenido en el disco de radio 2 centrado en el origen, es decir, $c \in M$ si y sólo si $|z_n(c)|\le2$ , para todo $n \ge0$. Este hecho será clave más adelante para la visualización de $M$.
+Se puede demostrar que $M$ está contenido en el disco de radio 2 centrado en el origen, es decir, $|z_n(c)|\le2$ para todo $n \ge0$ es una condición necesaria para que $c \in M$. Este hecho será clave más adelante para la visualización de $M$.
 
-# Cazando al conjunto $M$
+# Cazando al conjunto $M$ 
 
 Lo siguiente es contar con un algoritmo que nos permita interrogar a puntos del plano complejo para determinar si pertenecen o no al conjunto $M$. La primera cuestión a tratar es: ¿A qué puntos del plano complejo vamos a interrogar?
 
-En realidad, nuestra *cacería* de $M$ será bastante artificial, ya que no pretendemos ser los primeros exploradores tratando de caracterizar a $M$, por lo que no dudaremos en usar cualquier información ya conocida que nos sea de utilidad para simplificar la búsqueda. Por ejemplo, podríamos decidir interrogar solamente a puntos dentro del disco de radio 2 centrado en el origen (véase el último enunciado del apartado anterior). Pero, ya decididos a tomar cualquier atajo posible, y sin ruborizarnos ni siquiera un poco, haremos algo mucho más *tramposo*: echaremos una ojeada a una imagen ya producida del conjunto de Mandelbrot, por ejemplo, la que aparece en [wikipedia](https://es.wikipedia.org/wiki/Conjunto_de_Mandelbrot):
+En realidad, nuestra *cacería* de $M$ será bastante artificial: no dudaremos en usar cualquier información ya conocida que nos sea de utilidad para simplificar la búsqueda. Por ejemplo, podríamos decidir interrogar solamente a puntos dentro del disco de radio 2 centrado en el origen (véase el último enunciado del apartado anterior). Pero, ya decididos a tomar cualquier atajo posible, y sin ruborizarnos ni siquiera un poco, haremos algo mucho más *tramposo*: echaremos una ojeada a una imagen ya producida del conjunto de Mandelbrot, por ejemplo, la que aparece en [wikipedia](https://es.wikipedia.org/wiki/Conjunto_de_Mandelbrot):
 
 ![](800px-Mandelset_hires.png){fig-align="center" width="500"}
 
-Así, con la enorme ventaja de contar con una imagen del conjunto que queremos obtener, podemos acotar aún más la región de búsqueda: de acuerdo a la figura anterior, vemos que si restringimos la *cacería* al rectángulo dado por: $\{-2 \leq Re(c) \leq 0.75\}$ y $\{ -1.25 \leq Im(c) \leq 1.25 \}$, podemos obtener una *buena* representación de $M$.
+Así, con la enorme ventaja de contar con una imagen del conjunto que queremos obtener, podemos acotar aún más la región de búsqueda: de acuerdo a la figura anterior, vemos que podemos restringir la *cacería* al rectángulo dado por: $\{-2 \leq Re(c) \leq 0.75\}$ y $\{ -1.25 \leq Im(c) \leq 1.25 \}$.
 
 Para tomar puntos dentro de esta región, construimos en Python un arreglo matricial. Pero antes, importamos las librerías que vamos a utilizar:
 
@@ -147,21 +147,10 @@ Por ejemplo, aquí se muestra *el conjunto* $M$, después de 500 iteraciones:
 
 También podemos visualizar el conjunto de Mandelbrot al registrar las iteraciones necesarias para que la sucesión asociada a un punto $c$ escape del círculo de radio 2.
 
-En el siguiente código construimos la función `mandelbrot(iter, m)`, en la cual se incluyen las dos formas de visualización descritas anteriormente.
-
-Además del número de iteraciones, el usuario puede definir como parámetro de entrada el exponente en la familia de sucesiones, es decir, vamos a generalizar a sucesiones de la forma:
-
-$$
-\begin{align*} 
-z_0 &= 0 \\ 
-z_{n+1}(c) &= z_n^m+c 
-\end{align*}
-$$
-
-donde $m$ puede ser cualquier entero.
+En el siguiente código construimos la función `mandelbrot(iter)`, en la cual se incluyen las dos formas de visualización descritas anteriormente.
 
 ``` python
-def mandelbrot(iter, m):
+def mandelbrot(iter):
     
     xmin, xmax, xcantPuntos = -2.00, +0.75, 1000
     ymin, ymax, ycantPuntos = -1.25, +1.25, 1000
@@ -176,7 +165,7 @@ def mandelbrot(iter, m):
     N = np.zeros((xcantPuntos, ycantPuntos))
 
     for k in range(iter):
-        Z = Z**m + C
+        Z = Z**2 + C
 
         idxg = np.greater_equal(abs(Z), 2)
         Z[idxg] = 2
@@ -194,32 +183,26 @@ def mandelbrot(iter, m):
     plt.show()
 ```
 
-Veamos algunos ejemplos.
+Veamos un ejemplo con 20 iteraciones:
 
 ``` python
 mandelbrot(20, 2)
 ```
 
+![](Iteracion_20_2.png){fig-align="center"}
+
+![](Iteracion_20_1.png){fig-align="center"}
+
 Observamos que con la segunda forma de visualizar el conjunto $M$, la parte amarilla representa los puntos cuya sucesión asociada no ha escapado después de 20 iteraciones.
-
-Al cambiar el exponente de la familia de sucesiones, podemos generar visualizaciones interesantes de otros conjuntos:
-
-``` python
-mandelbrot(20, 3)
-```
-
-``` python
-mandelbrot(20,-4)
-```
-
-Interesantemente, para valores negativos de $m$, la visualización por tiempo de escape no parece ser muy informativa.
 
 # Conclusión
 
-Hemos presentado una forma sencilla de visualizar el conjunto de Mandelbrot y de algunos otros conjuntos que resultan al cambiar el exponente de la sucesión dada por la @eq-1. Para ello, se aplicaron funciones básicas de las librerías NumPy y Matplotlib.
+Hemos presentado una forma sencilla de visualizar el conjunto de Mandelbrot, aplicando funciones básicas de las librerías NumPy y Matplotlib.
 
 En términos estéticos, quizá los resultados logrados aquí no se acercan en calidad a los de otras propuestas en las que también se utiliza Python. Nuestro objetivo aquí es ejemplificar cómo el uso de NumPy y Matplotlib nos permite atacar una tarea no trivial de visualización mediante un código bastante sencillo.
 
 Esperamos que con lo aprendido hasta aquí el lector, si lo desea, pueda ahondar un poco más en este interesante tema o bien simplemente que pueda pasar un rato divertido generando sus propias visualizaciones.
 
 # Referencias
+
+Mandelbrot, Benoît. La geometría fractal de la naturaleza. Tusquets Editores S.A., 2021.

@@ -189,7 +189,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>El conjunto de Mandelbrot pertenece a un tipo de objetos geométricos llamados <em>fractales,</em> que presentan patrones que se repiten a diferentes escalas. Ya desde inicios del siglo XX se conocían objetos matemáticos con <em>propiedades fractales,</em> tales como la gráfica de la función de Weierstrass y el “copo de nieve de Koch”, que presentan la peculiar propiedad de tener dimensión fraccionaria. Pero en aquélla época el concepto de fractal aún no se había establecido.</p>
 <p>Más tarde en las décadas de los 60 y 70 del siglo pasado, matemáticos como Benoit Mandelbrot y Gaston Julia aportaron avances teóricos importantes en el estudio de los fractales, a la vez que ponían en evidencia la ubicua presencia de éstos en la naturaleza. En efecto, Mandelbrot hacía notar que muchas de las estructuras que encontramos en la naturaleza no se dejan describir adecuadamente mediante las formas regulares de la geometría euclídea, sino que se asemejan más a aproximaciones fractales.</p>
 <p>Costas, ríos, nubes, montañas, vasos sanguíneos, árboles y manchas de pintura en una pared; son todos ellos ejemplos de objetos que poseen características propias de los fractales. Intuitivamente, esto quiere decir que las formas que hacen reconocibles a estos objetos no varían considerablemente al cambiar la escala: un árbol se sigue viendo como árbol ya sea que lo veamos de lejos o de cerca (por supuesto, dentro de ciertos límites); lo mismo ocurre con una montaña o una mancha en la pared. Cuando una estructura tiene la propiedad de repetirse a diferentes escalas se dice que es <em>autosimilar.</em></p>
-<p>Seguramente se habrá notado que hasta ahora hemos esquivado, no sin cierta dosis de torpeza, la cuestión de dar una descripción precisa de lo que es un fractal. Ante esto damos dos justificaciones: primero, no es el propósito de este artículo dar una descripción teórica exhaustiva de los fractales, suponiendo que fuera posible realizar tal cosa en un sólo <em>post</em>. Segundo, aquí adoptamos la proverbial actitud de que “una imagen vale más que mil palabras”, la cual resulta particularmente acertada y de utilidad cuando queremos acercarnos a la geometría fractal.</p>
+<p>Seguramente se habrá notado que hasta ahora hemos esquivado la cuestión de dar una descripción precisa de lo que es un fractal. Ante esto damos dos justificaciones: primero, no es el propósito de este artículo dar una descripción teórica exhaustiva de los fractales, suponiendo que fuera posible realizar tal cosa en un sólo <em>post</em>. Segundo, aquí adoptamos la proverbial actitud de que “una imagen vale más que mil palabras”, la cual resulta particularmente acertada y de utilidad cuando queremos acercarnos a la geometría fractal.</p>
 <p>Finalmente, sabemos que habrá más de un lector que no termine de sentirse cómodo leyendo un artículo sobre fractales en el cual el autor no se toma la molestia de, por lo menos, mencionar la definición de lo que se entiende por fractal. Para dicho grupo de lectores, a continuación enunciamos la definición que el propio Mandelbrot propone:</p>
 <div id="def-fractal" class="theorem definition">
 <p><span class="theorem-title"><strong>Definición 1 (Fractal) </strong></span>Un <strong>fractal</strong> es un conjunto cuya dimensión de Hausdorff-Besicovitch es estrictamente mayor que su dimensión topológica.</p>
@@ -198,27 +198,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="conjunto-de-mandelbrot" class="level1">
 <h1>Conjunto de Mandelbrot</h1>
-<p>El conjunto de Mandelbrot es probablemente uno de los fractales más populares y estudiados.</p>
-<p>El conjunto de Mandelbrot, al cual en adelante denotamos por <span class="math inline">\(M\)</span>, es un subconjunto del plano complejo <span class="math inline">\(\mathbb{C}\)</span>. Su definición se da a partir de un proceso recursivo: se define una familia de sucesiones complejas parametrizadas por un número <span class="math inline">\(c \in \mathbb{C}\)</span> de la siguiente forma:</p>
+<p>El conjunto de Mandelbrot, al cual en adelante denotamos por <span class="math inline">\(M\)</span>, es probablemente uno de los fractales más populares y estudiados.</p>
+<p>El conjunto <span class="math inline">\(M\)</span> es un subconjunto del plano complejo <span class="math inline">\(\mathbb{C}\)</span>. Su definición se da a partir de un proceso recursivo: se define una familia de sucesiones complejas parametrizadas por un número <span class="math inline">\(c \in \mathbb{C}\)</span> de la siguiente forma:</p>
 <p><span id="eq-1"><span class="math display">\[
 \begin{align*}
 z_0 &amp;= 0 \\
 z_{n+1}(c) &amp;= z_n^2+c
 \end{align*}
 \tag{1}\]</span></span></p>
-<p>El conjunto <span class="math inline">\(M\)</span> está formado por aquéllos valores de <span class="math inline">\(c\)</span> para los cuales la sucesión <span class="math inline">\(\{z_i(c)\}_{i=0}^\infty\)</span> está acotada. Por ejemplo, <span class="math inline">\(c=1\)</span> da lugar a la sucesión no acotada <span class="math inline">\(\{0, 1, 2, 5 ,26, … \}\)</span>, por lo cual 1 no pertenece a <span class="math inline">\(M\)</span>. En cambio, <span class="math inline">\(c=-1\)</span> sí pertenece a <span class="math inline">\(M\)</span>, ya que produce la sucesión acotada <span class="math inline">\(\{0, -1, 0 -1, … \}\)</span>.</p>
-<p>Se puede demostrar que <span class="math inline">\(M\)</span> está contenido en el disco de radio 2 centrado en el origen, es decir, <span class="math inline">\(c \in M\)</span> si y sólo si <span class="math inline">\(|z_n(c)|\le2\)</span> , para todo <span class="math inline">\(n \ge0\)</span>. Este hecho será clave más adelante para la visualización de <span class="math inline">\(M\)</span>.</p>
+<p>Los elementos de <span class="math inline">\(M\)</span> son aquéllos valores de <span class="math inline">\(c\)</span> para los cuales la sucesión <span class="math inline">\(\{z_i(c)\}_{i=0}^\infty\)</span> está acotada. Por ejemplo, <span class="math inline">\(c=1\)</span> da lugar a la sucesión no acotada <span class="math inline">\(\{0, 1, 2, 5 ,26, … \}\)</span>, por lo cual 1 no pertenece a <span class="math inline">\(M\)</span>. En cambio, <span class="math inline">\(c=-1\)</span> sí pertenece a <span class="math inline">\(M\)</span>, ya que produce la sucesión acotada <span class="math inline">\(\{0, -1, 0 -1, … \}\)</span>.</p>
+<p>Se puede demostrar que <span class="math inline">\(M\)</span> está contenido en el disco de radio 2 centrado en el origen, es decir, <span class="math inline">\(|z_n(c)|\le2\)</span> para todo <span class="math inline">\(n \ge0\)</span> es una condición necesaria para que <span class="math inline">\(c \in M\)</span>. Este hecho será clave más adelante para la visualización de <span class="math inline">\(M\)</span>.</p>
 </section>
 <section id="cazando-al-conjunto-m" class="level1">
 <h1>Cazando al conjunto <span class="math inline">\(M\)</span></h1>
 <p>Lo siguiente es contar con un algoritmo que nos permita interrogar a puntos del plano complejo para determinar si pertenecen o no al conjunto <span class="math inline">\(M\)</span>. La primera cuestión a tratar es: ¿A qué puntos del plano complejo vamos a interrogar?</p>
-<p>En realidad, nuestra <em>cacería</em> de <span class="math inline">\(M\)</span> será bastante artificial, ya que no pretendemos ser los primeros exploradores tratando de caracterizar a <span class="math inline">\(M\)</span>, por lo que no dudaremos en usar cualquier información ya conocida que nos sea de utilidad para simplificar la búsqueda. Por ejemplo, podríamos decidir interrogar solamente a puntos dentro del disco de radio 2 centrado en el origen (véase el último enunciado del apartado anterior). Pero, ya decididos a tomar cualquier atajo posible, y sin ruborizarnos ni siquiera un poco, haremos algo mucho más <em>tramposo</em>: echaremos una ojeada a una imagen ya producida del conjunto de Mandelbrot, por ejemplo, la que aparece en <a href="https://es.wikipedia.org/wiki/Conjunto_de_Mandelbrot">wikipedia</a>:</p>
+<p>En realidad, nuestra <em>cacería</em> de <span class="math inline">\(M\)</span> será bastante artificial: no dudaremos en usar cualquier información ya conocida que nos sea de utilidad para simplificar la búsqueda. Por ejemplo, podríamos decidir interrogar solamente a puntos dentro del disco de radio 2 centrado en el origen (véase el último enunciado del apartado anterior). Pero, ya decididos a tomar cualquier atajo posible, y sin ruborizarnos ni siquiera un poco, haremos algo mucho más <em>tramposo</em>: echaremos una ojeada a una imagen ya producida del conjunto de Mandelbrot, por ejemplo, la que aparece en <a href="https://es.wikipedia.org/wiki/Conjunto_de_Mandelbrot">wikipedia</a>:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="800px-Mandelset_hires.png" class="img-fluid figure-img" width="500"></p>
 </figure>
 </div>
-<p>Así, con la enorme ventaja de contar con una imagen del conjunto que queremos obtener, podemos acotar aún más la región de búsqueda: de acuerdo a la figura anterior, vemos que si restringimos la <em>cacería</em> al rectángulo dado por: <span class="math inline">\(\{-2 \leq Re(c) \leq 0.75\}\)</span> y <span class="math inline">\(\{ -1.25 \leq Im(c) \leq 1.25 \}\)</span>, podemos obtener una <em>buena</em> representación de <span class="math inline">\(M\)</span>.</p>
+<p>Así, con la enorme ventaja de contar con una imagen del conjunto que queremos obtener, podemos acotar aún más la región de búsqueda: de acuerdo a la figura anterior, vemos que podemos restringir la <em>cacería</em> al rectángulo dado por: <span class="math inline">\(\{-2 \leq Re(c) \leq 0.75\}\)</span> y <span class="math inline">\(\{ -1.25 \leq Im(c) \leq 1.25 \}\)</span>.</p>
 <p>Para tomar puntos dentro de esta región, construimos en Python un arreglo matricial. Pero antes, importamos las librerías que vamos a utilizar:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
@@ -302,16 +302,8 @@ z_{n+1}(c) &amp;= z_n^2+c
 <section id="otra-forma-de-visualizar-m" class="level2">
 <h2 class="anchored" data-anchor-id="otra-forma-de-visualizar-m">Otra forma de visualizar <span class="math inline">\(M\)</span></h2>
 <p>También podemos visualizar el conjunto de Mandelbrot al registrar las iteraciones necesarias para que la sucesión asociada a un punto <span class="math inline">\(c\)</span> escape del círculo de radio 2.</p>
-<p>En el siguiente código construimos la función <code>mandelbrot(iter, m)</code>, en la cual se incluyen las dos formas de visualización descritas anteriormente.</p>
-<p>Además del número de iteraciones, el usuario puede definir como parámetro de entrada el exponente en la familia de sucesiones, es decir, vamos a generalizar a sucesiones de la forma:</p>
-<p><span class="math display">\[
-\begin{align*}
-z_0 &amp;= 0 \\
-z_{n+1}(c) &amp;= z_n^m+c
-\end{align*}
-\]</span></p>
-<p>donde <span class="math inline">\(m\)</span> puede ser cualquier entero.</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> mandelbrot(<span class="bu">iter</span>, m):</span>
+<p>En el siguiente código construimos la función <code>mandelbrot(iter)</code>, en la cual se incluyen las dos formas de visualización descritas anteriormente.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> mandelbrot(<span class="bu">iter</span>):</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    xmin, xmax, xcantPuntos <span class="op">=</span> <span class="op">-</span><span class="fl">2.00</span>, <span class="op">+</span><span class="fl">0.75</span>, <span class="dv">1000</span></span>
 <span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    ymin, ymax, ycantPuntos <span class="op">=</span> <span class="op">-</span><span class="fl">1.25</span>, <span class="op">+</span><span class="fl">1.25</span>, <span class="dv">1000</span></span>
@@ -326,7 +318,7 @@ z_{n+1}(c) &amp;= z_n^m+c
 <span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>    N <span class="op">=</span> np.zeros((xcantPuntos, ycantPuntos))</span>
 <span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> k <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">iter</span>):</span>
-<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>        Z <span class="op">=</span> Z<span class="op">**</span>m <span class="op">+</span> C</span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>        Z <span class="op">=</span> Z<span class="op">**</span><span class="dv">2</span> <span class="op">+</span> C</span>
 <span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>        idxg <span class="op">=</span> np.greater_equal(<span class="bu">abs</span>(Z), <span class="dv">2</span>)</span>
 <span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>        Z[idxg] <span class="op">=</span> <span class="dv">2</span></span>
@@ -342,23 +334,30 @@ z_{n+1}(c) &amp;= z_n^m+c
 <span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a>    plt.figure(figsize<span class="op">=</span>(<span class="dv">6</span>,<span class="dv">6</span>), dpi<span class="op">=</span><span class="dv">100</span>)</span>
 <span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a>    plt.imshow(N)</span>
 <span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a>    plt.show()</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Veamos algunos ejemplos.</p>
+<p>Veamos un ejemplo con 20 iteraciones:</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>mandelbrot(<span class="dv">20</span>, <span class="dv">2</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Iteracion_20_2.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Iteracion_20_1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
 <p>Observamos que con la segunda forma de visualizar el conjunto <span class="math inline">\(M\)</span>, la parte amarilla representa los puntos cuya sucesión asociada no ha escapado después de 20 iteraciones.</p>
-<p>Al cambiar el exponente de la familia de sucesiones, podemos generar visualizaciones interesantes de otros conjuntos:</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>mandelbrot(<span class="dv">20</span>, <span class="dv">3</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>mandelbrot(<span class="dv">20</span>,<span class="op">-</span><span class="dv">4</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Interesantemente, para valores negativos de <span class="math inline">\(m\)</span>, la visualización por tiempo de escape no parece ser muy informativa.</p>
 </section>
 </section>
 <section id="conclusión" class="level1">
 <h1>Conclusión</h1>
-<p>Hemos presentado una forma sencilla de visualizar el conjunto de Mandelbrot y de algunos otros conjuntos que resultan al cambiar el exponente de la sucesión dada por la <a href="#eq-1">Ecuación&nbsp;1</a>. Para ello, se aplicaron funciones básicas de las librerías NumPy y Matplotlib.</p>
+<p>Hemos presentado una forma sencilla de visualizar el conjunto de Mandelbrot, aplicando funciones básicas de las librerías NumPy y Matplotlib.</p>
 <p>En términos estéticos, quizá los resultados logrados aquí no se acercan en calidad a los de otras propuestas en las que también se utiliza Python. Nuestro objetivo aquí es ejemplificar cómo el uso de NumPy y Matplotlib nos permite atacar una tarea no trivial de visualización mediante un código bastante sencillo.</p>
 <p>Esperamos que con lo aprendido hasta aquí el lector, si lo desea, pueda ahondar un poco más en este interesante tema o bien simplemente que pueda pasar un rato divertido generando sus propias visualizaciones.</p>
 </section>
 <section id="referencias" class="level1">
 <h1>Referencias</h1>
+<p>Mandelbrot, Benoît. La geometría fractal de la naturaleza. Tusquets Editores S.A., 2021.</p>
 
 
 </section>

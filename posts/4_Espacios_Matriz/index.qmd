@@ -1,0 +1,72 @@
+---
+title: "Los 4 espacios asociados a una matriz"
+author: "Julio López"
+date: "2022-12-14"
+categories: [algebra lineal]
+image: "typewriter.jpg"
+lang: es-ES
+---
+
+# Los 4 Espacios asociados a una Matriz
+
+La forma más completa de entender la ecuación $Ax=b$ y a sus soluciones es a través del estudio de los 4 subespacios asociados a la matriz $A$.
+
+El resto de este artículo intenta explicar el significado preciso del enunciado anterior.
+
+La ecuación escrita en la primera línea de este artículo es el punto de partida de casi cualquier conversación interesante en Álgebra Lineal. Así pues, comencemos con:
+
+$$
+Ax = b
+$$ {#eq-1}
+
+donde $A$ es una matriz, $x$ es un vector por determinar y $b$ es un vector conocido.
+
+Por supuesto, $b$ juega un papel decisivo en la solución (o no solución) de la @eq-1, pero también es cierto que mucha de la acción ocurre en el otro lado: $Ax$, donde tenemos una multiplicación matricial. Es probable que en una primera aproximación a esta cuestión, enfoquemos toda nuestra atención a las operaciones realizadas entre la multitud de números que intervienen en este producto. Quizá nos preguntemos: "¿Qué números debemos poner dentro del vector $x$ para que se cumpla la ecuación?"
+
+Avanzando un poco, cambiamos nuestra perspectiva para considerar la cuestión desde un punto de vista *más vectorial*, al darnos cuenta que $Ax$ representa una *combinación lineal* de los **vectores columna** de $A$, por lo que ahora preguntaríamos: "¿Podemos encontrar una combinación lineal de las columnas de $A$ que sea igual a $b$?" Este es un interesante cambio de visión, pero aún cabe dar un paso más, y en vez de enfocarnos en vectores individuales, podemos pensar en términos de *espacios vectoriales completos*, y preguntarnos cosas como: ¿Cuál es el espacio generado por las columnas de $A$?
+
+El tratamiento desde el punto de vista de espacios es el nivel más alto en el que podemos enmarcar la @eq-1. Es un enfoque que requerirá algo de trabajo y algún salto de abstracción, pero la recompensa será un entendimiento más profundo de los posibles escenarios que pueden ocurrir al estudiar $Ax=b$. En particular, este camino nos llevará a un elegante y potente resultado: *"El Teorema Fundamental del Álgebra Lineal"*.
+
+Primero, damos un breve repaso de los conceptos de espacio vectorial y subespacios. El lector familiarizado con estos conceptos puede fácilmente saltar esta parte y pasar a las siguientes secciones.
+
+Finalmente, haremos algunos comentarios sobre las implicaciones de estos resultados en el contexto de *Machine Learning*.
+
+## Espacios vectoriales
+
+No estamos aquí muy interesados en revisar a detalle la definición *larga* (formal) de espacio vectorial. Mejor, empezaremos con los importantes ejemplos de espacios $\mathbb{R}^1$ , $\mathbb{R}^2$, $\mathbb{R}^3$, ... y aprovechamos para repasar los aspectos más importantes de los espacios vectoriales. Para evitar la cansada repetición de términos, de aquí en adelante usamos de forma indistinta los términos *espacio vectorial*, *espacio lineal* y *espacio*.
+
+::: {#def-espacio}
+El espacio $\mathbb{R}^n$ consiste de todos los vectores columna $v$ con $n$ componentes reales.
+:::
+
+Podemos imaginar al espacio $\mathbb{R}^2$ como el plano usual $xy$ y a $\mathbb{R}^3$ como el espacio $xyz$. A partir de $\mathbb{R}^4$ resulta difícil imaginar el correspondiente *espacio geométrico*, pero afortunadamente, en Álgebra Lineal esto no es en absoluto necesario ni representa impedimento alguno. Una vez que captamos las ideas algebraicas (e incluso geométricas) en $\mathbb{R}^2$, podemos brincar a $\mathbb{R}^{1000}$ sin mayor dificultad.
+
+$\begin{bmatrix} \pi \\ 2 \end{bmatrix}$ está en $\mathbb{R}^2$ y $\left[ 1, \  0, \  2, \  0 \right]^T$ está en $\mathbb{R}^4$. Todos los vectores en $\mathbb{R}^2$ tienen dos componentes y los que están en $\mathbb{R}^4$ tienen cuatro componentes. El superíndice $T$ indica la transposición del vector (cambia de renglón a columna).
+
+A continuación mostramos los aspectos más importantes de los espacios vectoriales.
+
+-   Un vector puede multiplicarse por un número; para ello, simplemente se multiplica cada componente por el número. Al número se le llama "*escalar*". Ejemplo: $7\begin{bmatrix} \pi \\ 2 \end{bmatrix} = \begin{bmatrix} 7\pi \\ 14 \end{bmatrix}$.
+
+-   Dos vectores de un mismo espacio pueden sumarse *componente a componente*: $\begin{bmatrix} 2 \\ 3 \\ -1 \end{bmatrix}+\begin{bmatrix} -5 \\ 0 \\ 4 \end{bmatrix} = \begin{bmatrix} -3 \\ 3 \\ 3 \end{bmatrix}$
+
+-   Tanto la multiplicación por escalar como la suma de vectores dan lugar a un vector dentro del mismo espacio. Se dice que los espacios vectoriales son cerrados.
+
+-   Al realizar en conjunto las operaciones de suma y multiplicación por escalar, se obtienen *combinaciones lineales*, las cuales de también están dentro del mismo espacio:
+
+    $2\begin{bmatrix} 2 \\ 3 \\ -1 \end{bmatrix}+4\begin{bmatrix} -5 \\ 0 \\ 4 \end{bmatrix} = \begin{bmatrix} -15 \\ 6 \\ 14 \end{bmatrix}$
+
+-   Estas operaciones cumplen una serie de propiedades: conmutativa, asociativa, distributiva, hay un único vector $0$ tal que $0 + v = v$ para cualquier vector $v$ del espacio y algunas otras. Véase por ejemplo [wikipedia](https://es.wikipedia.org/wiki/Espacio_vectorial#Definici%C3%B3n).
+
+### Subespacios
+
+::: {#def-subespacio}
+## Subespacio
+
+Un **subespacio** de un espacio vectorial es un conjunto de vectores (inluido el $0$) que satisface los dos requerimientos: si $v$ y $w$ son dos vectores en el subespacio y $c$ es un escalar, entonces
+
+-   *i*) $v+w$ está en el subespacio.
+
+-   *ii*) $cv$ está en el subespacio.
+:::
+
+### intro o algo asi...
