@@ -3,7 +3,7 @@ title: "Dibujando un Fractal con Numpy"
 author: "Julio López"
 date: "2022-12-14"
 categories: [Numpy]
-image: "typewriter.jpg"
+image: "Iteracion_20_1.png"
 lang: es-ES
 ---
 
